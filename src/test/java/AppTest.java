@@ -3,6 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class AppTest {
+    
     @Test
     public void testEscaleno()
     {
@@ -10,6 +11,7 @@ public class AppTest {
         int expected = tipos.ESCALENO.value();
         assertEquals(expected, actual);
     }
+
     @Test
     public void testEquilatero()
     {
@@ -17,6 +19,7 @@ public class AppTest {
         int expected = tipos.EQUILATERO.value();
         assertEquals(expected, actual);
     }
+
     @Test
     public void testIsosceles()
 
@@ -25,6 +28,7 @@ public class AppTest {
         int expected = tipos.ISOSCELES.value();
         assertEquals(expected, actual);
     }
+
     @Test
     public void testInvalido()
     {
