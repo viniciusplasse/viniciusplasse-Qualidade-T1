@@ -13,8 +13,8 @@ public class App {
             else
                 return tipos.ISOSCELES.value();
 
-        } else if ((a<=0) || (b <= 0) || (c <= 0))
-            return  tipos.ETRADAINVALIDA.value();
+        } else if ((a<=0 && b>0 && c>0) || (b <= 0 && a>0 && c>0) || (c <= 0 && a>0 && b>0))
+            return  tipos.ENTRADAINVALIDA.value();
 
         return tipos.NAOTRIANGULO.value();
     }
