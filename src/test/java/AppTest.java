@@ -35,5 +35,6 @@ public class AppTest {
         int actual = App.identificaTriangulo(6, 6, -7);
         int expected = tipos.NAOTRIANGULO.value();
         assertEquals(expected, actual);
+        
     }
 }
