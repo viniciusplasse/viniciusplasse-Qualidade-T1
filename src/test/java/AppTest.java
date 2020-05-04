@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-    
+
     @Test
     public void testEscaleno()
     {
@@ -33,7 +33,7 @@ public class AppTest {
     public void testInvalido()
     {
         int actual = App.identificaTriangulo(6, 6, -7);
-        int expected = tipos.INVALIDO.value();
+        int expected = tipos.NAOTRIANGULO.value();
         assertEquals(expected, actual);
     }
 }
