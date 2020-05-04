@@ -10,12 +10,12 @@ public class App {
             else if ((a != b) && (a != c) && (b != c))
                 return tipos.ESCALENO.value();
 
-            else if ((a<=0) ||(b <= 0)||(c <= 0)){
-                return  tipos.ETRADAINVALIDA.value();
-            }
             else
                 return tipos.ISOSCELES.value();
-        }
+
+        } else if ((a<=0) || (b <= 0) || (c <= 0))
+            return  tipos.ETRADAINVALIDA.value();
+
         return tipos.NAOTRIANGULO.value();
     }
 
